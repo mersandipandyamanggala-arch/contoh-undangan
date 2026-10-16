@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Wedding of Raka &amp; Salsabila</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<!-- CSS Sendiri -->
+<link rel="stylesheet" href="wa.css">
+</head>
+
+<body class="locked">
+
+<!-- ================= COVER / PEMBUKA ================= -->
+<div id="cover">
+  <div class="cover-frame">
+    <p class="cover-sub">The Wedding Of</p>
+    <h1 class="cover-name">Aldi <span>&amp;</span> Nabila</h1>
+    <p class="cover-date">28 . 11 . 2027</p>
+    <hr class="cover-hr">
+    <p class="cover-to">Kepada Yth.<br>Bapak / Ibu / Saudara / i</p>
+    <p class="cover-guest" id="guestName">Tamu Undangan Terhormat</p>
+    <button class="btn-open" id="openBtn">
+      <i class="bi bi-envelope-open-heart me-2"></i>Buka Undangan
+    </button>
+  </div>
+</div>
+
+<!-- ================= AUDIO ================= -->
+<audio id="bgMusic" loop preload="auto">
+  <!-- Ganti URL di bawah dengan file musik pilihanmu -->
+  <source src="music2.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Tombol musik -->
+<button class="music-btn" id="musicBtn" title="Musik">
+  <i class="bi bi-music-note-beamed"></i>
+</button>
+
+<!-- Toast -->
+<div class="toast-custom" id="toast">Berhasil disalin!</div>
+
+<!-- ================= MAIN ================= -->
+<div id="main">
+
+  <!-- ---------- HOME ---------- -->
+  <section id="home" class="hero">
+    <div class="container position-relative">
+      <p class="hero-script reveal">The Wedding Of</p>
+      <h1 class="hero-name reveal">Aldi <span>&amp;</span> Nabila</h1>
+      <p class="hero-date reveal">Minggu, 28 November 2027</p>
+      <p class="hero-tag reveal">Menuju Hari Bahagia</p>
+
+      <div class="countdown reveal" id="countdown">
+        <div class="cd-box"><div class="num" id="cd-d">00</div><div class="lbl">Hari</div></div>
+        <div class="cd-box"><div class="num" id="cd-h">00</div><div class="lbl">Jam</div></div>
+        <div class="cd-box"><div class="num" id="cd-m">00</div><div class="lbl">Menit</div></div>
+        <div class="cd-box"><div class="num" id="cd-s">00</div><div class="lbl">Detik</div></div>
+      </div>
+
+      <a href="#mempelai" class="scroll-down"><i class="bi bi-chevron-double-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ---------- MEMPELAI ---------- -->
+  <section id="mempelai">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Mempelai</span>
+        <h2>Calon Pengantin</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="row align-items-center justify-content-center g-4">
+
+        <!-- Pria -->
+        <div class="col-md-5">
+          <div class="couple-card reveal">
+            <div class="photo-wrap">
+              <img src="s2.jpg" alt="Mempelai Pria">
+            </div>
+            <h3 class="couple-name">Aldi Yoga Yalasena, A.Md</h3>
+            <p class="couple-parents">
+              Putra dari<br>
+              <b>Bapak Mayor Winarka</b><br>&amp;<br>
+              <b>Ibu Husnul Khotimah, A.Md </b>
+            </p>
+          </div>
+        </div>
+
+        <!-- Ampersand -->
+        <div class="col-md-2">
+          <div class="amp reveal">&amp;</div>
+        </div>
+
+        <!-- Wanita -->
+        <div class="col-md-5">
+          <div class="couple-card reveal">
+            <div class="photo-wrap">
+              <img src="s1.jpg" alt="Mempelai Wanita">
+            </div>
+            <h3 class="couple-name">Nabila Febrianti, S.K.M </h3>
+            <p class="couple-parents">
+              Putri dari<br>
+              <b>Bapak Puryoto</b><br>&amp;<br>
+              <b>Ibu Jumirah </b>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- RANGKAIAN ACARA ---------- -->
+  <section id="acara" style="background:rgba(6,15,33,.45);">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Rangkaian</span>
+        <h2>Acara</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Akad Nikah -->
+        <div class="col-md-6 col-lg-5">
+          <div class="event-card reveal">
+            <div class="event-icon"><i class="bi bi-bookmark-heart"></i></div>
+            <h4 class="event-title">Akad Nikah</h4>
+            <p class="event-sub">Ijab Qabul</p>
+
+            <div class="event-row"><i class="bi bi-calendar-event"></i> Rabu, 24 November 2027</div>
+            <div class="event-row"><i class="bi bi-clock"></i> Pukul <b>09.00 WIB</b> – Selesai</div>
+            <div class="event-row">
+              <i class="bi bi-geo-alt"></i>
+              Masjid Agung Al-Akbar</Al-Akbar><br>
+               Jl. Masjid Al-AkbarTimur No.1,<br> Kota Surabaya, Jawa Timur
+            </div>
+
+            <a class="btn-maps"
+                  href="https://maps.app.goo.gl/BY1SauTW4EiqNC32A"
+                  target="_blank" rel="noopener">
+              <i class="bi bi-geo-alt-fill me-1"></i> Lihat Lokasi
+            </a>
+          </div>
+        </div>
+
+        <!-- Resepsi -->
+        <div class="col-md-6 col-lg-5">
+          <div class="event-card reveal">
+            <div class="event-icon"><i class="bi bi-cup-hot"></i></div>
+            <h4 class="event-title">Resepsi</h4>
+            <p class="event-sub">Walimatul 'Ursy</p>
+
+            <div class="event-row"><i class="bi bi-calendar-event"></i> Minggu, 28 November 2027</div>
+            <div class="event-row"><i class="bi bi-clock"></i> Pukul <b>12.00 – 17.00 WIB</b></div>
+            <div class="event-row">
+              <i class="bi bi-geo-alt"></i>
+              Gedung Bapra Kodikmar<br>
+              Jl. Jajartunggal Timur III Blok A No.3<br>Surabaya, Jawa Timur
+            </div>
+
+            <a class="btn-maps"
+               href="https://maps.app.goo.gl/SxuwtwGtsS5bT2Q38"
+               target="_blank" rel="noopener">
+              <i class="bi bi-geo-alt-fill me-1"></i> Lihat Lokasi
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- KISAH KASIH ---------- -->
+  <section id="kisah">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Kisah</span>
+        <h2>Kasih Kami</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-year">2020</div>
+          <h5 class="tl-title">Pertemuan Pertama</h5>
+          <p class="tl-text">
+            Kami dipertemukan di sebuah cafe. Sebuah perkenalan sederhana
+            yang ternyata menjadi awal dari segalanya.
+          </p>
+        </div>
+
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-year">2022</div>
+          <h5 class="tl-title">Mulai Menjalin Kasih</h5>
+          <p class="tl-text">
+            Setelah tiga tahun saling mengenal, kami memutuskan untuk melangkah
+            bersama dan saling menguatkan dalam suka maupun duka.
+          </p>
+        </div>
+
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-year">2026</div>
+          <h5 class="tl-title">Lamaran &amp; Menuju Halal</h5>
+          <p class="tl-text">
+            Dengan restu kedua keluarga, kami mengikat janji untuk melangkah ke
+            jenjang yang lebih serius, menuju pernikahan yang sakral.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- GALERI ---------- -->
+  <section id="galeri" style="background:rgba(6,15,33,.45);">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Momen</span>
+        <h2>Galeri</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g1.jpg" alt="Galeri 1" data-bs-toggle="modal" data-bs-target="#modalFoto" data-img="https://picsum.photos/seed/galeri1/1400/1400">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g3.jpg" alt="Galeri 2" data-bs-toggle="modal" data-bs-target="#modalFoto" data-img="https://picsum.photos/seed/galeri2/1400/1400">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g5.jpg" alt="Galeri 3" data-bs-toggle="modal" data-bs-target="#modalFoto" data-img="https://picsum.photos/seed/galeri3/1400/1400">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g8.jpg" alt="Galeri 4" data-bs-toggle="modal" data-bs-target="#modalFoto" data-img="https://picsum.photos/seed/galeri4/1400/1400">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g12.jpg" alt="Galeri 5" data-bs-toggle="modal" data-bs-target="#modalFoto" data-img="https://picsum.photos/seed/galeri5/1400/1400">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="gallery-item reveal">
+            <img src="g13.jpg" alt="Galeri 6" data-bs-toggle="modal" data-bs-target="#modalFoto" data-img="https://picsum.photos/seed/galeri6/1400/1400">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Foto -->
+  <div class="modal fade" id="modalFoto" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content" style="background:transparent; border:0;">
+        <div class="modal-body p-0 text-center position-relative">
+          <button type="button" class="btn-close btn-close-white position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" style="z-index:5;"></button>
+          <img id="modalImg" src="" alt="Foto" class="img-fluid rounded-4" style="border:1px solid rgba(212,175,55,.4);">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------- TANDA KASIH ---------- -->
+  <section id="gift">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Tanda</span>
+        <h2>Kasih</h2>
+        <div class="line"></div>
+      </div>
+
+      <p class="gift-intro reveal">
+        Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
+        Namun jika memberi adalah ungkapan tanda kasih Anda, Anda dapat
+        memberikannya melalui:
+      </p>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-5">
+          <div class="gift-card reveal">
+            <div class="bank-logo"><i class="bi bi-bank me-2"></i>Bank BNI</div>
+            <div class="bank-owner">a.n. Aldi Yoga Yalasena</div>
+            <div class="acc-num" id="acc1">0956954536</div>
+            <button class="btn-copy" data-copy="0956954536">
+              <i class="bi bi-clipboard me-1"></i> Salin Nomor
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="gift-card reveal">
+            <div class="bank-logo"><i class="bi bi-bank me-2"></i>Bank BCA</div>
+            <div class="bank-owner">a.n. winarka</div>
+            <div class="acc-num" id="acc2">2712927581</div>
+            <button class="btn-copy" data-copy="2712927581">
+              <i class="bi bi-clipboard me-1"></i> Salin Nomor
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- RSVP & UCAPAN ---------- -->
+  <section id="rsvp" style="background:rgba(6,15,33,.45);">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="script">Doa &amp; Restu</span>
+        <h2>RSVP</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- KIRI: Form Konfirmasi -->
+        <div class="col-lg-5">
+          <div class="rsvp-box reveal">
+            <h5><i class="bi bi-envelope-paper me-2"></i>Konfirmasi Kehadiran</h5>
+            <p class="sub">Mohon isi form di bawah ini untuk mengonfirmasi kehadiran Anda.</p>
+
+            <form id="rsvpForm">
+              <div class="mb-3">
+                <label class="form-label" for="inNama">Nama Lengkap</label>
+                <input type="text" class="form-control" id="inNama" placeholder="Masukkan nama Anda" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="inHadir">Konfirmasi Kehadiran</label>
+                <select class="form-select" id="inHadir" required>
+                  <option value="" selected disabled>-- Pilih --</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
+                  <option value="Masih Ragu">Masih Ragu</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="inPesan">Pesan &amp; Doa</label>
+                <textarea class="form-control" id="inPesan" rows="4" placeholder="Tuliskan ucapan dan doa terbaik Anda..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-send">
+                <i class="bi bi-send-fill me-2"></i>Kirim Konfirmasi
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- KANAN: Daftar Ucapan -->
+        <div class="col-lg-7">
+          <div class="rsvp-box reveal">
+            <h5><i class="bi bi-chat-heart me-2"></i>Ucapan &amp; Doa</h5>
+            <p class="sub">Doa terbaik dari keluarga dan sahabat.</p>
+
+            <div class="wish-count">
+              <i class="bi bi-people-fill me-1"></i>
+              <b id="totalUcapan">0</b> ucapan &nbsp;•&nbsp;
+              <i class="bi bi-check-circle me-1"></i>
+              <b id="totalHadir">0</b> akan hadir
+            </div>
+
+            <div class="wish-list" id="wishList"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- FOOTER ---------- -->
+  <footer>
+    <div class="footer-script">Raka &amp; Salsabila</div>
+    <p class="footer-text">
+      Merupakan suatu kebahagiaan dan kehormatan bagi kami<br>
+      apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+    </p>
+    <p class="footer-text" style="margin-top:18px; font-size:.75rem; color:rgba(201,206,214,.5);">
+      © 2026 Raka &amp; Salsabila — Undangan Digital
+    </p>
+  </footer>
+
+</div><!-- /#main -->
+
+<!-- ================= BOTTOM NAV ================= -->
+<nav class="bottom-nav">
+  <a href="#home" class="active"><i class="bi bi-house-door-fill"></i><span>Home</span></a>
+  <a href="#mempelai"><i class="bi bi-hearts"></i><span>Mempelai</span></a>
+  <a href="#acara"><i class="bi bi-calendar2-week"></i><span>Acara</span></a>
+  <a href="#kisah"><i class="bi bi-book-half"></i><span>Kisah</span></a>
+  <a href="#galeri"><i class="bi bi-images"></i><span>Galeri</span></a>
+  <a href="#gift"><i class="bi bi-gift-fill"></i><span>Hadiah</span></a>
+  <a href="#rsvp"><i class="bi bi-chat-dots-fill"></i><span>RSVP</span></a>
+</nav>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JS Sendiri -->
+<script src="f.js"></script>
+
+</body>
+</html>
